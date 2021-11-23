@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Adventures</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+
+
+    <script src="https://kit.fontawesome.com/3a2f8a23b7.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+</head>
+
+<body id="home">
+    <header>
+        <!-- Start of Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="media/logo.svg" alt="winter adventures logo" width="70"
+                        height="50" class="d-inline-block align-text-center mx-2">Winter Adventures</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accomodation">Accomodation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#newsletter">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html">Our locations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- Jumbotron with overlay, background and text -->
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video/Mt_Baker.mp4" type="video/mp4">
+        </video>
+
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div id="mobile" class="w-100 text-white">
+                    <p class="font-weight-light font-italic" id="welcome"></p>
+                    <h1 class="display-3">Holidays in the snow...</h1>
+                    <p class="lead mb-0">Skiing and snowboarding accomodation</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of jumbotron -->
+    </header>
+    <!-- end of header -->
+
+    <!-- Accomodation section -->
+    <section id="accomodation" class="m-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-4">
+                    <div class="card h-100">
+                        <!-- Card 1 -->
+                        <img class="card-img-top" src="media/chalet1.jpg" alt="Chalet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Tignes</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">France</h6>
+                            <p class="card-text">A very well furnished chalet. The Kalinda is great for those who are
+                                after a range of facilities but don’t wish to travel far.
+                                Spa's, gyms, restaurants and a ski shop are right on your doorstep.</p>
+                            <a href="tignes.html" class="btn btn-info">More details...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="card h-100">
+                        <!-- card 2 -->
+                        <img class="card-img-top" src="media/chalet2.jpg" alt="Chalet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Morzine</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">France</h6>
+                            <p class="card-text">Situated in St Jean d’Aulps in the "Portes du Soleil" on the Grande
+                                Route des Alpes and 30 minutes south of Lake Geneva - a perfect spot for holidays all
+                                year round.
+                                A 10 minute walk from the centre of the village.</p>
+                            <a href="morzine.html" class="btn btn-info">More details...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="card h-100">
+                        <!-- card 3 -->
+                        <img class="card-img-top" src="media/chalet3.jpg" alt="Chalet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">La Tania</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">France</h6>
+                            <p class="card-text">Chalet 715 is our premier luxury chalet catering for 15 guests. We've
+                                created a unique, warm, welcoming, home away from home for all the old and new.
+                                30 minutes from Lake Geneva - a perfect spot for holidays all year round.</p>
+                            <a href="tania.html" class="btn btn-info">More details...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of accomodation section-->
+
+    <!-- Start of services section -->
+    <section id="services" class="p-5 bg-info text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="row">
+                        <h2>Services</h2>
+                        <p>Anyone who has travelled with us will know that it is the experience, quality and dedication
+                            of our ski resort teams and our in-resort ski services that really
+                            sets us apart from anything else you are likely to experience. We aim to continually exceed
+                            clients expectations and ensure every time a client skis with us,
+                            it is their best ski holiday so far.</p>
+                    </div>
+                    <div class="row my-3">
+                        <div class="media">
+                            <div class="align-self-center p-3">
+                                <i class="fas fa-check-square fa-3x mr-4"></i>
+                            </div>
+                            <div class="media-body align-self-center">
+                                Our childcare teams deliver a unique service, ensuring that every child gets the
+                                attention & support they need.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="media">
+                            <div class="align-self-center p-3">
+                                <i class="fas fa-check-square fa-3x mr-4"></i>
+                            </div>
+                            <div class="media-body align-self-center">
+                                Our comprehensive range of ski programmes ensure that all our clients enjoy their time
+                                in the mountains.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-center">
+                    <img src="media/ski-services.jpg" id="skiservices" alt="Ski services">
+                </div>
+            </div>
+        </div>
+    </section> <!-- end of services -->
+
+    <!-- Start of newsletter form -->
+    <section id="newsletter" class="p-5 bg-secondary text-white">
+        <div class="container">
+            <h2>Sign up for our newsletter</h2>
+
+            <form id="newsletter-form">
+                <!-- input fields -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="newsname" placeholder="Name..." name="name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="newsemail" placeholder="Email address.." name="email">
+                </div>
+
+                <!-- dropdown -->
+                <div class="form-group">
+                    <select class="form-control">
+                        <option selected>Get news about...</option>
+                        <option>Tignes</option>
+                        <option>Morzine</option>
+                        <option>La Tania</option>
+                    </select>
+                </div>
+                <!-- submit button // on the project brief the text was black, but for accessibility's sake, I'll keep it white -->
+                <button type="submit" class="btn btn-info btn-block" id="submit">Submit</button>
+            </form>
+        </div>
+    </section><!-- end of newsletter form -->
+
+    <!-- contact form -->
+    <section id="contact" class="m-5">
+        <div class="container">
+            <h2>Contact</h2>
+            <form >
+                <!-- input fields -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name..." name="name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email address.." name="email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address" placeholder="Address..." name="address">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="postcode" placeholder="Postcode" name="postcode">
+                </div>
+                <!-- dropdown -->
+                <div class="form-group">
+                    <select class="form-control">
+                        <option selected>Please choose an area...</option>
+                        <option>Tignes</option>
+                        <option>Morzine</option>
+                        <option>La Tania</option>
+                    </select>
+                </div>
+                
+                <!-- text box -->
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message..."></textarea>
+                </div>
+                <!-- remember me check -->
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <!-- submit button // on the project brief the text was black, but for accessibility's sake, I'll keep it white -->
+                <button type="button" class="btn btn-info btn-block">Submit</button>
+            </form>
+        </div>
+    </section> <!-- end of contact -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <p>Winter Adventures 2019-2021</p>
+                </div>
+                <div class="col text-center py-4">
+                    <p id="time"></p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- end of footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+    <script src="date.js"></script>
+    <script src="store.js"></script>
+
+    <!-- scrollspy transition -->
+    <script>
+        $(document).ready(function () {
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: ".navbar",
+                offset: 50
+            });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#navbarNav a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>

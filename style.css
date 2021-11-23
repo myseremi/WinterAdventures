@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* navbar with different opacity and bottom border */
+.navbar-dark {
+    opacity: .8;
+    border-bottom: 2px solid #008ed6;
+}
+
+/* clippath */
+#skiservices {
+    clip-path: ellipse(50% 50% at 50% 50%);
+    width: 100%;
+    margin: auto;
+}
+
+#carousel {
+    position: fixed;
+}
+
+@media (pointer: coarse)and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        /* background changes to image on mobile */
+    }
+
+    header .overlay {
+        z-index: 0;
+    }
+
+    #mobile {
+        z-index: 1;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+.description {
+    text-transform: capitalize;
+}
+

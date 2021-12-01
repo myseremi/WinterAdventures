@@ -24,9 +24,11 @@ else{
 //for the newsletter form, start function() on submit
 document
     .getElementById("newsletter-form")
-    .addEventListener("submit", function (event) {
+    .addEventListener("submit", function (
+                      //event
+                     ) {
 
-        event.preventDefault();
+        //event.preventDefault();
 
         //get values from the input
         let newsname = newsnameInput.value.trim();
